@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-st-nucleo-c031c6",
+      "id": "nucleo",
+      "top": -66.37,
+      "left": 191.02,
+      "attrs": {}
+    },
+    { "type": "wokwi-membrane-keypad", "id": "keypad1", "top": -146, "left": -148, "attrs": {} }
+  ],
+  "connections": [
+    [ "$serialMonitor:TX", "nucleo:PA3", "", [] ],
+    [ "$serialMonitor:RX", "nucleo:PA2", "", [] ],
+    [ "keypad1:R1", "nucleo:PA4", "green", [ "v115.2", "h182.4", "v-105.6" ] ],
+    [ "keypad1:R2", "nucleo:PA5", "green", [ "v124.8", "h527.6", "v-9.6" ] ],
+    [ "keypad1:R3", "nucleo:PA6", "green", [ "v134.4", "h527.7", "v-230.4" ] ],
+    [ "keypad1:R4", "nucleo:PA7", "green", [ "v144", "h527.8", "v-201.6" ] ],
+    [ "keypad1:C1", "nucleo:PB11", "green", [ "v220.8", "h172.7", "v-9.6" ] ],
+    [ "keypad1:C2", "nucleo:PB12.1", "green", [ "v230.4", "h556.8", "v-28.8" ] ],
+    [ "keypad1:C3", "nucleo:PB13", "green", [ "v240", "h556.65", "v-9.6" ] ],
+    [ "keypad1:C4", "nucleo:PB14", "green", [ "v249.6", "h556.5", "v-9.6" ] ]
+  ],
+  "dependencies": {}
+}
